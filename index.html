@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>For you ❤️</title>
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      padding: 18px 12px 40px;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(255, 70, 120, .30), transparent 28%),
+        radial-gradient(circle at 85% 25%, rgba(190, 70, 255, .22), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(255, 30, 90, .18), transparent 35%),
+        linear-gradient(135deg, #09070d 0%, #180914 45%, #0d0815 100%);
+      color: #eee;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.8;
+      position: relative;
+    }
+
+    .heart-bg {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .heart-bg span {
+      position: absolute;
+      bottom: -60px;
+      left: var(--left);
+      font-size: var(--size);
+      opacity: 0;
+      filter: drop-shadow(0 0 12px rgba(255, 90, 140, .65));
+      animation: rise var(--duration) linear var(--delay) infinite;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(.7) rotate(0deg);
+        opacity: 0
+      }
+
+      12% {
+        opacity: var(--opacity)
+      }
+
+      55% {
+        transform: translateY(-55vh) scale(1) rotate(12deg)
+      }
+
+      100% {
+        transform: translateY(-115vh) scale(1.2) rotate(-14deg);
+        opacity: 0
+      }
+    }
+
+    .card {
+      max-width: 720px;
+      margin: auto;
+      padding: 28px 20px 34px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, .055);
+      border: 1px solid rgba(255, 255, 255, .1);
+      box-shadow: 0 20px 70px rgba(0, 0, 0, .55), 0 0 60px rgba(255, 70, 130, .08)
+    }
+
+    .top {
+      text-align: center;
+      padding-bottom: 25px
+    }
+
+    .heart {
+      font-size: 30px
+    }
+
+    .top h1 {
+      font-size: 34px;
+      font-weight: 500;
+      margin: 8px 0 2px
+    }
+
+    .sub {
+      font: 13px Arial;
+      color: #999
+    }
+
+    .letter p {
+      font-size: 16.5px;
+      margin: 0 0 22px
+    }
+
+    .ending {
+      border-top: 1px solid #ffffff18;
+      margin-top: 32px;
+      padding-top: 24px;
+      text-align: center
+    }
+
+    .ending p {
+      font-size: 20px;
+      color: #ffd6df
+    }
+
+    .note {
+      text-align: center;
+      color: #777;
+      font: 11px Arial;
+      margin-top: 22px
+    }
+
+    @media(max-width:480px) {
+      .card {
+        padding: 24px 17px 28px
+      }
+
+      .letter p {
+        font-size: 16px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="heart-bg" aria-hidden="true">
+    <span style="--left:4%;--size:18px;--duration:11s;--delay:0s;--opacity:.45">♥</span>
+    <span style="--left:12%;--size:28px;--duration:14s;--delay:2s;--opacity:.55">♡</span>
+    <span style="--left:21%;--size:16px;--duration:10s;--delay:5s;--opacity:.38">♥</span>
+    <span style="--left:31%;--size:34px;--duration:16s;--delay:1s;--opacity:.48">♡</span>
+    <span style="--left:42%;--size:20px;--duration:12s;--delay:7s;--opacity:.52">♥</span>
+    <span style="--left:53%;--size:30px;--duration:15s;--delay:3s;--opacity:.42">♡</span>
+    <span style="--left:64%;--size:17px;--duration:10s;--delay:6s;--opacity:.5">♥</span>
+    <span style="--left:73%;--size:36px;--duration:17s;--delay:0s;--opacity:.43">♡</span>
+    <span style="--left:83%;--size:22px;--duration:13s;--delay:4s;--opacity:.55">♥</span>
+    <span style="--left:93%;--size:29px;--duration:15s;--delay:8s;--opacity:.4">♡</span>
+  </div>
+  <main class="card">
+    <header class="top">
+      <div class="heart">❤️</div>
+      <h1>For you</h1>
+      <div class="sub">Just something I wanted to say</div>
+    </header>
+    <section class="letter">
+      <p>Ippo dhan puriyuthu nee enna puriya vaikka try pannina nu.... Nee manasula irukkuradha pesanum... rendu perum
+        oruthara oruthar purinjikanum nu nenacha... Aana naan adhukana time unaku kudukala.</p>
+      <p>Nee unna pathi enaku puriya vaikka try pannina.. aana atha naan kavanikama full ah enna pathi mattum than
+        yosichitu irunthirukan.... Nee busy work nu sollumbothu kooda adha purinjikaama... naan unna paakanum.. naan
+        unna miss panren nu enna pathi mattum than yosichitu irunthirukan... Aana neeyum enna miss pannirupa, paakanum
+        nu nenchirupa... unaku time correct ah amaiyala nu naan purinjikala...</p>
+      <p>Naan unna genuine ah love panradhu unmaithan... Aana niraya time naan pesunadhu benefits vibe mattum
+        kuduthirukunu later ah dhan purinjikiten... Enakku irundha love ah naan correct ah kaamikala...</p>
+      <p>Love na enaku enna venum nu nenakradhu mattum illa... unaku enna venum, nee enna feel panra nu purinjikiradhum
+        dhan love...</p>
+      <p>Sorry few months ah naan toxic ah irundhirukan... adhu naan normally irukra maari illa...</p>
+      <p>Unna purinjikaama, unakku thevaiyana time um space um kudukama, pala neram enna pathi mattum yosichadhuku
+        genuinely sorry...</p>
+      <p>Enaku oru chance tharuviya nu therila... coz nee intha 6 months la niraya chances kudutha. Naan than loosu,
+        athu purinjikama enna ennamo pannitan... Oru last chance kidaicha, kandippa indha time words la illa actions la
+        kaamipan...</p>
+      <p>Naama rendu perum onnu seruvoma maatoma nu therila... Maybe time will answer for that... aana onnu sure ah
+        solran... apdi onnu sendha kandippa unna nalla paathupan... unna paathu ellarum porama padura alavukku... ❤️</p>
+      <p>Fancy words nu ninaikatha... Ithu vara naan actions la kaatala than... Aana unaku theriyum en family pathi...
+        en appa en amma va epdi laam paathuka koodatho apdi laam than paathukittaaru... athu naan panna koodadhunu
+        irukan... so kandippa nalla paathupan...</p>
+      <p>Pesitu irukumbothu ethuvum therila... pesama irukumbothu than naa unna entha alavukku love panranu enakey
+        theriyuthu... ❤️</p>
+    </section>
+    <div class="ending">
+      <p>Nee thangamana ponnu d... ❤️<br>Ethana lifetime eduthaalum unnoda dhaan sera aasa paduvan... apdi patta ponnu
+        nee... 🫶</p>
+      </main>
+</body>
+
+</html>
